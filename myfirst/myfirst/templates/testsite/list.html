@@ -7,7 +7,7 @@
 {% block content %}
     {% if latest_articles_list %}
         {% for a in latest_articles_list %}
-            <a href="{% url 'testsite:detail' a.id %}">{{a.article_title}}
+            <a href="{% url 'testsite:detail' a.id %}">{{a.article_title}}<br>
         {% endfor %}
     {% else %}
         Article not found...
